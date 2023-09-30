@@ -1,19 +1,30 @@
 #include <stdio.h>
 
-int swap (int x, int y) {
+int swap1 (int x, int y) {
 
 	int temp = x;
 	x = y;
 	y = temp;
 	
-	printf("After swap x = %d and y = %d\n", x, y);
+}
+
+int swap2(int a[]) {
+
+	int temp = a[0];
+	a[0] = a[1];
+	a[1] = temp;
+
 }
 
 int main(void) {
 
-	int x, y;
-	printf("Enter x and y : ");
-	scanf("%d%d", &x, &y);
+	int x= 1, y = 2;
+	int a[] = {1, 2};
 	
-	swap(x,y);
+	swap1(x,y);
+	printf("%d %d\n", x,y);
+	
+	
+	swap2(a);
+	printf("%d %d\n", a[0],a[1]);
 }
