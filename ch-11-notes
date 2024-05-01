@@ -1,0 +1,6 @@
+1. static and dynamic routing
+2. 4 types of dynamic routing
+
+Distance Vector Routing :
+- select path with less hop count (number of router in that path) 
+- protocols RIP and IGRP
